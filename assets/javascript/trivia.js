@@ -49,7 +49,7 @@ $("body").on("click", ".reset-button", function(event){
 
 function addToLosses() {
 	unawnsered++;
-	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCount + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + answerSolutions[currentQuestion] + "</p>" + "<img class='center-block img-wrong' src='assets/images/timeUp.JPG'>";
+	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCount + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + answerSolutions[currentQuestion] + "</p>" + "<img class='center-block img-wrong' src='assets/images/timeUp.jpg'>";
 	$(".mainArea").html(gameHTML);
 	setTimeout(wait, 2000);
 }
@@ -63,7 +63,7 @@ function generateWin() {
 
 function generateLoss() {
 	wrongCount++;
-	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCount + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ answerSolutions[currentQuestion] + "</p>" + "<img class='center-block img-wrong' src='assets/images/wrong.JPG'>";
+	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCount + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ answerSolutions[currentQuestion] + "</p>" + "<img class='center-block img-wrong' src='assets/images/wrong.jpg'>";
 	$(".mainArea").html(gameHTML);
 	setTimeout(wait, 1500);
 }
@@ -119,7 +119,7 @@ var startQuiz;
 var html;
 var questionArray = ["Jackson Pollock was an influential abstract expressionist painter from what country?", "The Van Gogh museum is located in what European capital city?", "What color do you get when you mix yellow and blue?", "In what year did the French revolution begin?", "What city has the largest population?", "In what year did Neil Armstrong and Buzz Aldrin land on the moon?", "Lox, often served on a bagel, is a fillet of brined what?", "Sriracha is type of hot sauce named after a city located in what country?"];
 var answerArray = [["Japan", "France", "England", "The United States"], ["Paris","Amsterdam","London","Prague"], ["Magenta", "Purple", "Green", "brown"], ["1885","1234","1789","2003"], ["Bakersfeild CA", "New York NY", "Tokyo Japan", "Seattle WA"], ["1969","1772","1954","2018"], ["Grapes", "Salmon", "Cod", "Turkey"], ["China","Australia","Germany","Thailand"]];
-var imageArray = ["<img class='center-block img-right' src='assets/images/JacksonP.JPG'>", "<img class='center-block img-right' src='assets/images/vanG.JPG'>", "<img class='center-block img-right' src='assets/images/green.JPG'>", "<img class='center-block img-right' src='assets/images/frenchR.JPG'>", "<img class='center-block img-right' src='assets/images/tokyo.JPG'>", "<img class='center-block img-right' src='assets/images/moon.JPG'>", "<img class='center-block img-right' src='assets/images/lox.JPG'>", "<img class='center-block img-right' src='assets/images/sriracha.JPG'>"];
+var imageArray = ["<img class='center-block img-right' src='assets/images/JacksonP.jpg'>", "<img class='center-block img-right' src='assets/images/vanG.jpg'>", "<img class='center-block img-right' src='assets/images/green.jpg'>", "<img class='center-block img-right' src='assets/images/frenchR.jpg'>", "<img class='center-block img-right' src='assets/images/tokyo.jpg'>", "<img class='center-block img-right' src='assets/images/moon.jpg'>", "<img class='center-block img-right' src='assets/images/lox.jpg'>", "<img class='center-block img-right' src='assets/images/sriracha.jpg'>"];
 var answerSolutions = ["D. The United States", "B. Amsterdam", "C. Green", "C. 1789", "C. Tokyo Japan", "A. 1969", "B. Salmon", "D. Thailand"];
 var currentQuestion = 0;
 var timeCount = 30;
